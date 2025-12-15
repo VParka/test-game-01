@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Survival RPG</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D FPS Survival RPG</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
-    <div id="container">
+    <div id="app">
         <canvas id="game-canvas"></canvas>
     </div>
-
-    <div id="dialogue-container" style="display: none;">
-        <div id="npc-name"></div>
-        <div id="dialogue-text"></div>
-        <div id="dialogue-options"></div>
-    </div>
-
-    <div id="crosshair">+</div>
 
     <script type="importmap">
     {
@@ -27,6 +19,6 @@
         }
     }
     </script>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
