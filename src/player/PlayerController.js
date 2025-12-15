@@ -32,11 +32,12 @@ export class PlayerController {
 
     update(deltaTime) {
         // --- Horizontal Movement ---
+        // Controls: S=forward, W=backward, D=left, A=right (reversed from standard)
         const currentSpeed = this.inputManager.isKeyPressed('ShiftLeft') ? this.sprintSpeed : this.speed;
-        const forward = this.inputManager.isKeyPressed('KeyW') ? 1 : 0;
-        const backward = this.inputManager.isKeyPressed('KeyS') ? 1 : 0;
-        const right = this.inputManager.isKeyPressed('KeyA') ? 1 : 0;
-        const left = this.inputManager.isKeyPressed('KeyD') ? 1 : 0;
+        const forward = this.inputManager.isKeyPressed('KeyS') ? 1 : 0;  // S key moves forward
+        const backward = this.inputManager.isKeyPressed('KeyW') ? 1 : 0; // W key moves backward
+        const right = this.inputManager.isKeyPressed('KeyD') ? 1 : 0;    // D key moves right
+        const left = this.inputManager.isKeyPressed('KeyA') ? 1 : 0;     // A key moves left
 
         this.moveDirection.z = forward - backward;
         this.moveDirection.x = right - left;
