@@ -4,3 +4,7 @@ server.pid
 
 # Verification artifacts
 /verification/
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
