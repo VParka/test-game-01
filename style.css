@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-canvas {
+    display: block;
+}
+
+#dialogue-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#npc-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4e9af1;
+}
+
+#dialogue-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#dialogue-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogue-option {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dialogue-option:hover {
+    background-color: #555;
+}
+
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    pointer-events: none; /* Allows mouse events to pass through */
+}

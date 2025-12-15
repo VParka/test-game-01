@@ -1,0 +1,6 @@
+# Development server artifacts
+server.log
+server.pid
+
+# Verification artifacts
+/verification/
