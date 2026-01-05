@@ -1,0 +1,21 @@
+/* src/styles/main.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+#app, #game-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Hide cursor when pointer is locked */
+canvas:focus {
+    cursor: none;
+}
